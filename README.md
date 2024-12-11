@@ -57,7 +57,7 @@ Zeyiqe%440
 Divibi#598
 ```
 
----
+or
 
 ```bash
 samurai -l 12 -d 4 -x 10
