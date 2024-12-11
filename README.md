@@ -1,6 +1,6 @@
 # Samurai
 
-Samurai is a simple —not powerful, just simple— generation tool designed to create secure, pronounceable passwords that are easy to remember, easy to type, and hard to crack. With Samurai, you can balance security and usability effortlessly.
+Samurai is a simple —not powerful, just simple— password generation tool designed to create secure, pronounceable passwords that are easy to remember, easy to type, and hard to crack. With Samurai, you can balance security and usability effortlessly.
 
 ## Installation
 
