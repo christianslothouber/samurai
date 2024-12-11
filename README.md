@@ -16,7 +16,7 @@ Samurai is a simple —not powerful, just simple— password generation tool des
 
 3. Make the script executable:
     ```bash
-      chmod +x samurai
+    chmod +x samurai
     ```
 
 4. (Optional) Add the directory to your `PATH` for easy access
