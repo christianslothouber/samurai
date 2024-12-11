@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+import argparse
+import random
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+specials = ['!', '@', '#', '%', '&']
+
+
+def generate(length, digits):
+    chars = []
+
+    for i in range(length - digits - 1):
+        if i % 2 == 0:
+            chars.append(random.choice(consonants))
+        else:
+            chars.append(random.choice(vowels))
+
+    chars.append(random.choice(specials))
+
+    for i in range(digits):
+        chars.append(str(random.randint(0, 9)))
+
+    return ''.join(chars).capitalize()
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Generates 'elegant' passwords")
+
+    parser.add_argument("-l", type=int, help="Total length of password", required=False, default=10)
+    parser.add_argument("-d", type=int, help="Amount of digits used", required=False, default=3)
+    parser.add_argument("-x", type=int, help="Amount of passwords generated", required=False, default=5)
+
+    args = parser.parse_args()
+
+    for x in range(args.x):
+        print(generate(args.l, args.d))
